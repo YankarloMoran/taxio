@@ -1,4 +1,4 @@
-import config from "@/lib/config"
+﻿import config from "@/lib/config"
 import { PLANS, stripeClient } from "@/lib/stripe"
 import { NextRequest, NextResponse } from "next/server"
 

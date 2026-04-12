@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import { EmailLayout } from "./email-layout"
 
 interface OTPEmailProps {
@@ -6,8 +6,8 @@ interface OTPEmailProps {
 }
 
 export const OTPEmail: React.FC<OTPEmailProps> = ({ otp }) => (
-  <EmailLayout preview="Your TaxHacker verification code">
-    <h2 style={{ textAlign: "center", color: "#4f46e5" }}>🔑 Your TaxHacker verification code</h2>
+  <EmailLayout preview="Your Taxio verification code">
+    <h2 style={{ textAlign: "center", color: "#4f46e5" }}>ðŸ”‘ Your Taxio verification code</h2>
     <div
       style={{
         margin: "20px 0",

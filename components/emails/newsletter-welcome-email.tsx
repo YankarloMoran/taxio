@@ -1,9 +1,9 @@
-import React from "react"
+﻿import React from "react"
 import { EmailLayout } from "./email-layout"
 
 export const NewsletterWelcomeEmail: React.FC = () => (
-  <EmailLayout preview="Welcome to TaxHacker Newsletter!">
-    <h2 style={{ color: "#4f46e5" }}>👋 Welcome to TaxHacker!</h2>
+  <EmailLayout preview="Welcome to Taxio Newsletter!">
+    <h2 style={{ color: "#4f46e5" }}>ðŸ‘‹ Welcome to Taxio!</h2>
 
     <p style={{ fontSize: "16px", lineHeight: "1.5", color: "#333" }}>
       Thank you for subscribing to our updates. We&apos;ll keep you updated about:
@@ -24,7 +24,7 @@ export const NewsletterWelcomeEmail: React.FC = () => (
       <p style={{ fontSize: "16px", color: "#333" }}>
         Best regards,
         <br />
-        The TaxHacker Team
+        The Taxio Team
       </p>
     </div>
   </EmailLayout>

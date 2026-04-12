@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { formatBytes } from "@/lib/utils"
 import { File } from "@/prisma/client"

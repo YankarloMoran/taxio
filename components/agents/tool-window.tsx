@@ -1,4 +1,4 @@
-import { Bot } from "lucide-react"
+﻿import { Bot } from "lucide-react"
 
 export default function ToolWindow({ title, children }: { title: string; children: React.ReactNode }) {
   return (

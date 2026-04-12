@@ -1,4 +1,4 @@
-import config from "@/lib/config"
+﻿import config from "@/lib/config"
 import { PLANS, stripeClient } from "@/lib/stripe"
 import { createUserDefaults, isDatabaseEmpty } from "@/models/defaults"
 import { getOrCreateCloudUser, getUserByStripeCustomerId, updateUser } from "@/models/users"

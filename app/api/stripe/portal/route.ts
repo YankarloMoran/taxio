@@ -1,4 +1,4 @@
-import { getCurrentUser } from "@/lib/auth"
+﻿import { getCurrentUser } from "@/lib/auth"
 import { stripeClient } from "@/lib/stripe"
 import { NextRequest, NextResponse } from "next/server"
 

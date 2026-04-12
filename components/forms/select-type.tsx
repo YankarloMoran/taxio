@@ -1,4 +1,4 @@
-import { SelectProps } from "@radix-ui/react-select"
+﻿import { SelectProps } from "@radix-ui/react-select"
 import { FormSelect } from "./simple"
 
 export const FormSelectType = ({
@@ -16,9 +16,9 @@ export const FormSelectType = ({
   isRequired?: boolean
 } & SelectProps) => {
   const items = [
-    { code: "expense", name: "Expense", badge: "↓" },
-    { code: "income", name: "Income", badge: "↑" },
-    { code: "pending", name: "Pending", badge: "⏲︎" },
+    { code: "expense", name: "Expense", badge: "â†“" },
+    { code: "income", name: "Income", badge: "â†‘" },
+    { code: "pending", name: "Pending", badge: "â²ï¸Ž" },
     { code: "other", name: "Other", badge: "?" },
   ]
 

@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { saveProfileAction } from "@/app/(app)/settings/actions"
 import { FormError } from "@/components/forms/error"

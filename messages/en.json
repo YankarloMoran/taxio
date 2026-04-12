@@ -1,0 +1,14 @@
+{
+  "Navigation": {
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "apps": "Apps",
+    "settings": "Settings",
+    "upload": "Upload",
+    "logout": "Logout"
+  },
+  "Dashboard": {
+    "title": "Welcome to Taxio",
+    "subtitle": "Your AI Accountant is ready."
+  }
+}

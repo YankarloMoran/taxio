@@ -7,10 +7,12 @@ import { Banknote, ChartBarStacked, FolderOpenDot, Key, TextCursorInput, X } fro
 import { revalidatePath } from "next/cache"
 import Image from "next/image"
 import Link from "next/link"
+import { getTranslations } from "next-intl/server";
 
 export async function WelcomeWidget() {
   const user = await getCurrentUser()
   const settings = await getSettings(user.id)
+  const t = await getTranslations("Dashboard");
 
   return (
     <Card className="flex flex-col lg:flex-row items-start gap-10 p-10 w-full">
@@ -18,7 +20,7 @@ export async function WelcomeWidget() {
       <div className="flex flex-col">
         <CardTitle className="flex items-center justify-between">
           <span className="text-2xl font-bold">
-            <ColoredText>Hey, I&apos;m TaxHacker 👋</ColoredText>
+            <ColoredText>{t('title')} 👋</ColoredText>
           </span>
           <Button
             variant="outline"
@@ -34,8 +36,7 @@ export async function WelcomeWidget() {
         </CardTitle>
         <CardDescription className="mt-5">
           <p className="mb-3">
-            I&apos;m a little accountant app that helps you deal with endless receipts, checks and invoices with (you
-            guessed it) AI. Here&apos;s what I can do:
+            {t('subtitle')} Here&apos;s what I can do:
           </p>
           <ul className="mb-5 list-disc pl-5 space-y-1">
             <li>
@@ -69,15 +70,15 @@ export async function WelcomeWidget() {
           </p>
         </CardDescription>
         <div className="mt-2">
-          <Link href="https://github.com/vas3k/TaxHacker" className="text-blue-500 hover:underline">
+          <Link href="https://github.com/vas3k/Taxio" className="text-blue-500 hover:underline">
             Source Code
           </Link>
           <span className="mx-2">|</span>
-          <Link href="https://github.com/vas3k/TaxHacker/issues" className="text-blue-500 hover:underline">
+          <Link href="https://github.com/vas3k/Taxio/issues" className="text-blue-500 hover:underline">
             Request New Feature
           </Link>
           <span className="mx-2">|</span>
-          <Link href="https://github.com/vas3k/TaxHacker/issues" className="text-blue-500 hover:underline">
+          <Link href="https://github.com/vas3k/Taxio/issues" className="text-blue-500 hover:underline">
             Report a Bug
           </Link>
           <span className="mx-2">|</span>

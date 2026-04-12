@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useNotification } from "@/app/(app)/context"
 import { analyzeFileAction, deleteUnsortedFileAction, saveFileAsTransactionAction } from "@/app/(app)/unsorted/actions"
@@ -327,7 +327,7 @@ export default function AnalyzeForm({
             disabled={isDeleting}
           >
             <Trash2 className="h-4 w-4" />
-            {isDeleting ? "⏳ Deleting..." : "Delete"}
+            {isDeleting ? "â³ Deleting..." : "Delete"}
           </Button>
 
           <Button type="submit" disabled={isSaving} data-save-button>

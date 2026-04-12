@@ -8,6 +8,8 @@ services:
       - SELF_HOSTED_MODE=true
       - UPLOAD_PATH=/app/data/uploads
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/taxhacker
+    env_file:
+      - .env
     volumes:
       - ./data:/app/data
     restart: unless-stopped

@@ -3,6 +3,7 @@ import { Field, Prisma, Transaction } from "@/prisma/client"
 import { cache } from "react"
 import { getFields } from "./fields"
 import { deleteFile } from "./files"
+import { syncTransactionToSheets } from "@/lib/sheets"
 
 export type TransactionData = {
   name?: string | null
@@ -135,7 +136,7 @@ export const getTransactionsByFileId = cache(async (fileId: string, userId: stri
 export const createTransaction = async (userId: string, data: TransactionData): Promise<Transaction> => {
   const { standard, extra } = await splitTransactionDataExtraFields(data, userId)
 
-  return await prisma.transaction.create({
+  const transaction = await prisma.transaction.create({
     data: {
       ...standard,
       extra: extra,
@@ -143,12 +144,17 @@ export const createTransaction = async (userId: string, data: TransactionData): 
       userId,
     },
   })
+
+  // Sincronización pasiva (no bloqueante)
+  syncTransactionToSheets(transaction).catch(console.error)
+
+  return transaction
 }
 
 export const updateTransaction = async (id: string, userId: string, data: TransactionData): Promise<Transaction> => {
   const { standard, extra } = await splitTransactionDataExtraFields(data, userId)
 
-  return await prisma.transaction.update({
+  const transaction = await prisma.transaction.update({
     where: { id, userId },
     data: {
       ...standard,
@@ -156,6 +162,11 @@ export const updateTransaction = async (id: string, userId: string, data: Transa
       items: data.items ? (data.items as Prisma.InputJsonValue) : [],
     },
   })
+
+  // Sincronización pasiva (no bloqueante)
+  syncTransactionToSheets(transaction).catch(console.error)
+
+  return transaction
 }
 
 export const updateTransactionFiles = async (id: string, userId: string, files: string[]): Promise<Transaction> => {

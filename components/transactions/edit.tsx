@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { deleteTransactionAction, saveTransactionAction } from "@/app/(app)/transactions/actions"
 import { ItemsDetectTool } from "@/components/agents/items-detect"
@@ -226,7 +226,7 @@ export default function TransactionEditForm({
         <Button type="button" onClick={handleDelete} variant="destructive" disabled={isDeleting}>
           <>
             <Trash2 className="h-4 w-4" />
-            {isDeleting ? "⏳ Deleting..." : "Delete "}
+            {isDeleting ? "â³ Deleting..." : "Delete "}
           </>
         </Button>
 

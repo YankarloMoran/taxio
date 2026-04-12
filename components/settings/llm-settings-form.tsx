@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { fieldsToJsonSchema } from "@/ai/schema"
 import { saveSettingsAction } from "@/app/(app)/settings/actions"

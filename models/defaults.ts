@@ -1,6 +1,8 @@
 import { prisma } from "@/lib/db"
 
-export const DEFAULT_PROMPT_ANALYSE_NEW_FILE = `You are an accountant and invoice analysis assistant. Extract following information from the given invoice: 
+export const DEFAULT_PROMPT_ANALYSE_NEW_FILE = `You are a financial auditor and invoice analysis assistant.
+SPECIAL INSTRUCTION: Look very carefully for SaaS subscriptions, digital services, and recurring business payments.
+Extract following information from the given invoice: 
 
 {fields}
 

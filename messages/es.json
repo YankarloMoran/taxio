@@ -1,0 +1,14 @@
+{
+  "Navigation": {
+    "dashboard": "Panel de Control",
+    "transactions": "Transacciones",
+    "apps": "Aplicaciones",
+    "settings": "Ajustes",
+    "upload": "Subir Documento",
+    "logout": "Cerrar Sesión"
+  },
+  "Dashboard": {
+    "title": "Bienvenido a Taxio",
+    "subtitle": "Tu Asistente Contable con IA."
+  }
+}

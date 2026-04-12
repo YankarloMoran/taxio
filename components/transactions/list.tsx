@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { BulkActionsMenu } from "@/components/transactions/bulk-actions"
 import { Badge } from "@/components/ui/badge"

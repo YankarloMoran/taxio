@@ -3,7 +3,7 @@ services:
     image: ghcr.io/yankarlomoran/taxio:latest
     container_name: taxio_app
     networks:
-      - taxhacker_network
+      - taxio_network
     environment:
       - NODE_ENV=production
       - BASE_URL=https://taxio.app

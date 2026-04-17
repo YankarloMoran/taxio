@@ -56,3 +56,8 @@ pgdata
 *.db-journal
 # Sentry Config File
 .env.sentry-build-plugin
+
+# Error logs
+ts-errors.txt
+ts-errors-utf8.txt
+lint-errors.txt

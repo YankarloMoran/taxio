@@ -1,4 +1,4 @@
-﻿import LandingPage from "@/app/landing/landing"
+import LandingPage from "./landing/landing"
 import { getSession } from "@/lib/auth"
 import config from "@/lib/config"
 import { redirect } from "next/navigation"

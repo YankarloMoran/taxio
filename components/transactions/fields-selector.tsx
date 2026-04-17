@@ -1,6 +1,6 @@
-﻿"use client"
+"use client"
 
-import { updateFieldVisibilityAction } from "@/app/(app)/transactions/actions"
+import { updateFieldVisibilityAction } from "@/app/[locale]/(app)/transactions/actions"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,

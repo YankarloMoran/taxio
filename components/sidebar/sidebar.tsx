@@ -1,6 +1,6 @@
-﻿"use client"
+"use client"
 
-import { useNotification } from "@/app/(app)/context"
+import { useNotification } from "@/app/[locale]/(app)/context"
 import { UploadButton } from "@/components/files/upload-button"
 import {
   Sidebar,

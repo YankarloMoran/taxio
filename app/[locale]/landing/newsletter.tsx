@@ -1,6 +1,6 @@
-﻿"use client"
+"use client"
 
-import { subscribeToNewsletterAction } from "@/app/landing/actions"
+import { subscribeToNewsletterAction } from "@/app/[locale]/landing/actions"
 import { useState } from "react"
 
 export function NewsletterForm() {

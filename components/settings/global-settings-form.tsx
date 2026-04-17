@@ -1,6 +1,6 @@
-﻿"use client"
+"use client"
 
-import { saveSettingsAction } from "@/app/(app)/settings/actions"
+import { saveSettingsAction } from "@/app/[locale]/(app)/settings/actions"
 import { FormError } from "@/components/forms/error"
 import { FormSelectCategory } from "@/components/forms/select-category"
 import { FormSelectCurrency } from "@/components/forms/select-currency"

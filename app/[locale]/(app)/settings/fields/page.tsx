@@ -1,4 +1,4 @@
-﻿import { addFieldAction, deleteFieldAction, editFieldAction } from "@/app/(app)/settings/actions"
+import { addFieldAction, deleteFieldAction, editFieldAction } from "@/app/[locale]/(app)/settings/actions"
 import { CrudTable } from "@/components/settings/crud"
 import { getCurrentUser } from "@/lib/auth"
 import { getFields } from "@/models/fields"

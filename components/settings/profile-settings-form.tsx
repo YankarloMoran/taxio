@@ -1,6 +1,6 @@
-﻿"use client"
+"use client"
 
-import { saveProfileAction } from "@/app/(app)/settings/actions"
+import { saveProfileAction } from "@/app/[locale]/(app)/settings/actions"
 import { FormError } from "@/components/forms/error"
 import { FormAvatar, FormInput } from "@/components/forms/simple"
 import { Button } from "@/components/ui/button"

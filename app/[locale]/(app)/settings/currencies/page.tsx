@@ -1,4 +1,4 @@
-﻿import { addCurrencyAction, deleteCurrencyAction, editCurrencyAction } from "@/app/(app)/settings/actions"
+import { addCurrencyAction, deleteCurrencyAction, editCurrencyAction } from "@/app/[locale]/(app)/settings/actions"
 import { CrudTable } from "@/components/settings/crud"
 import { getCurrentUser } from "@/lib/auth"
 import { getCurrencies } from "@/models/currencies"

@@ -1,4 +1,4 @@
-﻿import { addCategoryAction, deleteCategoryAction, editCategoryAction } from "@/app/(app)/settings/actions"
+import { addCategoryAction, deleteCategoryAction, editCategoryAction } from "@/app/[locale]/(app)/settings/actions"
 import { CrudTable } from "@/components/settings/crud"
 import { getCurrentUser } from "@/lib/auth"
 import { randomHexColor } from "@/lib/utils"

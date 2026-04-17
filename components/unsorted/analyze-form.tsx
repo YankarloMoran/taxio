@@ -1,7 +1,7 @@
-﻿"use client"
+"use client"
 
-import { useNotification } from "@/app/(app)/context"
-import { analyzeFileAction, deleteUnsortedFileAction, saveFileAsTransactionAction } from "@/app/(app)/unsorted/actions"
+import { useNotification } from "@/app/[locale]/(app)/context"
+import { analyzeFileAction, deleteUnsortedFileAction, saveFileAsTransactionAction } from "@/app/[locale]/(app)/unsorted/actions"
 import { CurrencyConverterTool } from "@/components/agents/currency-converter"
 import { ItemsDetectTool } from "@/components/agents/items-detect"
 import ToolWindow from "@/components/agents/tool-window"

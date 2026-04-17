@@ -1,6 +1,6 @@
-﻿"use client"
+"use client"
 
-import { deleteTransactionAction, saveTransactionAction } from "@/app/(app)/transactions/actions"
+import { deleteTransactionAction, saveTransactionAction } from "@/app/[locale]/(app)/transactions/actions"
 import { ItemsDetectTool } from "@/components/agents/items-detect"
 import ToolWindow from "@/components/agents/tool-window"
 import { FormError } from "@/components/forms/error"

@@ -1,4 +1,4 @@
-﻿import { addProjectAction, deleteProjectAction, editProjectAction } from "@/app/(app)/settings/actions"
+import { addProjectAction, deleteProjectAction, editProjectAction } from "@/app/[locale]/(app)/settings/actions"
 import { CrudTable } from "@/components/settings/crud"
 import { getCurrentUser } from "@/lib/auth"
 import { randomHexColor } from "@/lib/utils"

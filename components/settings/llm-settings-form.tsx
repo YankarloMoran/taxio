@@ -1,7 +1,7 @@
-﻿"use client"
+"use client"
 
 import { fieldsToJsonSchema } from "@/ai/schema"
-import { saveSettingsAction } from "@/app/(app)/settings/actions"
+import { saveSettingsAction } from "@/app/[locale]/(app)/settings/actions"
 import { FormError } from "@/components/forms/error"
 import { FormTextarea } from "@/components/forms/simple"
 import { Button } from "@/components/ui/button"

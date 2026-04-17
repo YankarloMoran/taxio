@@ -1,4 +1,4 @@
-﻿import { SubscriptionExpired } from "@/components/auth/subscription-expired"
+import { SubscriptionExpired } from "@/components/auth/subscription-expired"
 import ScreenDropArea from "@/components/files/screen-drop-area"
 import MobileMenu from "@/components/sidebar/mobile-menu"
 import { AppSidebar } from "@/components/sidebar/sidebar"
@@ -8,7 +8,7 @@ import { getCurrentUser, isSubscriptionExpired } from "@/lib/auth"
 import config from "@/lib/config"
 import { getUnsortedFilesCount } from "@/models/files"
 import type { Metadata, Viewport } from "next"
-import "../globals.css"
+import "../../globals.css"
 import { NotificationProvider } from "./context"
 
 export const metadata: Metadata = {

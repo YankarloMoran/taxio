@@ -1,6 +1,6 @@
-﻿"use client"
+"use client"
 
-import { deleteTransactionFileAction, uploadTransactionFilesAction } from "@/app/(app)/transactions/actions"
+import { deleteTransactionFileAction, uploadTransactionFilesAction } from "@/app/[locale]/(app)/transactions/actions"
 import { FilePreview } from "@/components/files/preview"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"

@@ -1,7 +1,7 @@
-﻿"use client"
+"use client"
 
-import { useNotification } from "@/app/(app)/context"
-import { uploadFilesAction } from "@/app/(app)/files/actions"
+import { useNotification } from "@/app/[locale]/(app)/context"
+import { uploadFilesAction } from "@/app/[locale]/(app)/files/actions"
 import { Button } from "@/components/ui/button"
 import config from "@/lib/config"
 import { Loader2 } from "lucide-react"
